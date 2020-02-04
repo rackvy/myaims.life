@@ -1,0 +1,78 @@
+@red: #e01f5a;
+@green: #2eb87c;
+@bodyColor: #a7a7a7;
+
+
+a{
+  color: @green;
+  text-decoration: none;
+
+  &:hover{
+    color: @green;
+    text-decoration: underline;
+    text-decoration-color: @red;
+  }
+}
+p{
+  margin-bottom: 10px;
+}
+.custom-file-label:after{
+  content: 'Выбрать';
+  background-color: transparent;
+}
+.input-group{
+  .input-group-text{
+    background-color: transparent;
+    color: @red;
+  }
+}
+.color-red{
+  color: @red;
+}
+img.logo{
+  width: 70px;
+  height: 59px;
+}
+.text-after-logo{
+  font-size: 13px;
+}
+header{
+  padding: 20px 0px;
+  background-image: url("/images/background-background-image-blue-sky-1054218.jpg");
+  background-position: 0px 300px;
+  background-size: cover;
+  .brand-name{
+    line-height: 120%;
+    color: rgba(255,255,255,.7);
+    position: relative;
+    span{
+      position: absolute;
+      padding-left: 10px;
+    }
+  }
+  nav{
+    padding: 20px 0px;
+    ul{
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      li{
+        display: inline-block;
+        padding-right: 15px;
+        a{
+        }
+      }
+    }
+  }
+  .sign-in{
+    padding: 10px 0px;
+  }
+}
+main{
+}
+.datepicker table tr td.active{
+  background: @green;
+  &:hover{
+    background: @green;
+  }
+}
