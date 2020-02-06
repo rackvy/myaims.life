@@ -35,39 +35,43 @@ $(document).ready(function () {
         $('.js-add-more-steps').data('id', id);
 
 
-        var htmlTemlete = '<div class="form-row">' +
-            '           <div class="col-md-6 col-12">\n' +
-            '                <label for="step'+id+'">Шаг '+id+'. Назови его</label>\n' +
+        var htmlTemlete = '<div class="col-md-6 col-12">\n' +
+            '                <label for="step1">Шаг '+ id +'. Назови его</label>\n' +
             '                <div class="input-group">\n' +
             '                    <div class="input-group-prepend">\n' +
             '                        <span class="input-group-text"><i class="far fa-dot-circle"></i></span>\n' +
             '                    </div>\n' +
-            '                    <input type="text" class="form-control" id="step'+id+'" placeholder="Пример: Первые накопления" value="" required name="step'+id+'">\n' +
+            '                    <input type="text" class="form-control" id="step1" placeholder="Пример: Первые накопления" value=""  name="step['+ id +'][name]">\n' +
             '                </div>\n' +
             '            </div>\n' +
             '            <div class="col-md-3 col-6">\n' +
             '                <div class="form-group">\n' +
-            '                    <label for="date-step'+id+'">Выберите дату</label>\n' +
+            '                    <label for="date-step1">Выберите дату</label>\n' +
             '                    <div class="input-group">\n' +
             '                        <div class="input-group-prepend">\n' +
             '                            <span class="input-group-text"><i class="far fa-calendar-check"></i></span>\n' +
             '                        </div>\n' +
-            '                        <input type="text" class="form-control js-datepicker" id="date-step'+id+'"  value="" required name="date-step'+id+'">\n' +
+            '                        <input type="text" class="form-control js-datepicker" id="date-step1"  value="" name="step['+ id +'][date]">\n' +
             '                    </div>\n' +
             '                </div>\n' +
             '            </div>\n' +
             '            <div class="col-md-3 col-6">\n' +
             '                <div class="form-group">\n' +
-            '                    <label for="repeatstep'+id+'">Повторение</label>\n' +
-            '                    <select class="custom-select" id="repeatstep'+id+'" name="repeatstep'+id+'">\n' +
+            '                    <label for="repeatstep1">Повторение</label>\n' +
+            '                    <select class="custom-select" id="repeatstep1" name="step['+ id +'][repeatstep]">\n' +
             '                        <option value="0" selected>Не повторять</option>\n' +
             '                        <option value="1">Каждый день</option>\n' +
             '                        <option value="2">Раз в неделю</option>\n' +
             '                        <option value="3">Раз в месяц</option>\n' +
             '                    </select>\n' +
             '                </div>\n' +
-            '            </div>' +
-            '</div>';
+            '            </div>\n' +
+            '            <div class="col-12 mb-4">\n' +
+            '                <div class="form-group">\n' +
+            '                    <label for="description1">Описание</label>\n' +
+            '                    <textarea class="form-control" id="description1" name="step['+ id +'][description]"></textarea>\n' +
+            '                </div>\n' +
+            '            </div>';
 
         $('.js-add-more-steps').append(htmlTemlete);
 

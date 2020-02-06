@@ -339,6 +339,46 @@ header {
 		height: 6px;
 	}
 }
+
+
+.js .cd-h-timeline__container{
+  max-width: 100%;
+}
+.cd-h-timeline__events{
+  ol{
+    padding-left: 0px;
+    li.cd-h-timeline__event{
+      //padding: 1px 0px;
+    }
+  }
+}
+.js .cd-h-timeline__event-content{
+  //max-width: 100%;
+}
+.js .cd-h-timeline__date--older-event::after{
+  border-color: @green;
+}
+.js .cd-h-timeline__date--selected::after{
+  border-color: @green;
+  background-color: @green;
+}
+.js .cd-h-timeline__date:hover::after{
+  border-color: @green;
+  background-color: @green;
+}
+.js .cd-h-timeline__navigation{
+  border-color: @green;
+  &:hover{
+    border-color: @green;
+  }
+}
+.js .cd-h-timeline__filling-line{
+  background-color: @green;
+}
+
+
+
+
 .xs-hide{}
 .xs-show{
 	display: none;

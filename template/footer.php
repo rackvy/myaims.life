@@ -58,7 +58,7 @@
                     </div>
                     <div class="form-group" style="margin-bottom: 14px;">
                         <div class="">
-                            <button type="submit" class="btn btn-success btn-block" name="login">Войти</button>
+                            <button type="submit" class="btn btn-success btn-block btn-pill" name="login">Войти</button>
                         </div>
                     </div>
                     <div class="form-group" style="margin-bottom: 14px;">

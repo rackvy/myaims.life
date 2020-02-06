@@ -127,7 +127,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/template/header.php');
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="far fa-dot-circle"></i></span>
                     </div>
-                    <input type="text" class="form-control" id="step1" placeholder="Пример: Первые накопления" value=""  name="step1">
+                    <input type="text" class="form-control" id="step1" placeholder="Пример: Первые накопления" value=""  name="step[1][name]">
                 </div>
             </div>
             <div class="col-md-3 col-6">
@@ -137,46 +137,52 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/template/header.php');
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="far fa-calendar-check"></i></span>
                         </div>
-                        <input type="text" class="form-control js-datepicker" id="date-step1"  value=""  name="date-step1">
+                        <input type="text" class="form-control js-datepicker" id="date-step1"  value="" name="step[1][date]">
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="form-group">
                     <label for="repeatstep1">Повторение</label>
-                    <select class="custom-select" id="repeatstep1" name="repeatstep1">
+                    <select class="custom-select" id="repeatstep1" name="step[1][repeatstep]">
                         <option value="0" selected>Не повторять</option>
                         <option value="1">Каждый день</option>
                         <option value="2">Раз в неделю</option>
                         <option value="3">Раз в месяц</option>
                     </select>
+                </div>
+            </div>
+            <div class="col-12 mb-4">
+                <div class="form-group">
+                    <label for="description1">Описание</label>
+                    <textarea class="form-control" id="description1" name="step[1][description]"></textarea>
                 </div>
             </div>
 
             <div class="col-md-6 col-12">
-                <label for="step2">Шаг 2. Назови его</label>
+                <label for="step1">Шаг 2. Назови его</label>
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="far fa-dot-circle"></i></span>
                     </div>
-                    <input type="text" class="form-control" id="step2" placeholder="Пример: Первые накопления" value=""  name="step2">
+                    <input type="text" class="form-control" id="step1" placeholder="Пример: Первые накопления" value=""  name="step[2][name]">
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="form-group">
-                    <label for="date-step2">Выберите дату</label>
+                    <label for="date-step1">Выберите дату</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="far fa-calendar-check"></i></span>
                         </div>
-                        <input type="text" class="form-control js-datepicker" id="date-step2"  value="" required name="date-step2">
+                        <input type="text" class="form-control js-datepicker" id="date-step1"  value="" name="step[2][date]">
                     </div>
                 </div>
             </div>
             <div class="col-md-3 col-6">
                 <div class="form-group">
-                    <label for="repeatstep2">Повторение</label>
-                    <select class="custom-select" id="repeatstep2" name="repeatstep2">
+                    <label for="repeatstep1">Повторение</label>
+                    <select class="custom-select" id="repeatstep1" name="step[2][repeatstep]">
                         <option value="0" selected>Не повторять</option>
                         <option value="1">Каждый день</option>
                         <option value="2">Раз в неделю</option>
@@ -184,9 +190,15 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/template/header.php');
                     </select>
                 </div>
             </div>
+            <div class="col-12 mb-4">
+                <div class="form-group">
+                    <label for="description1">Описание</label>
+                    <textarea class="form-control" id="description1" name="step[2][description]"></textarea>
+                </div>
+            </div>
 
             <div class="col-12">
-                <div class="js-add-more-steps" data-id="2">
+                <div class="js-add-more-steps row" data-id="2">
 
                 </div>
             </div>
